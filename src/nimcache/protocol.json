@@ -1,0 +1,20 @@
+{"compile":[
+["C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\protocol.c", "C:\\Users\\ZACH\\Documents\\mingw64\\bin\\gcc.exe -c  -w  -IC:\\Users\\ZACH\\Documents\\nim-0.17.0\\lib -o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\protocol.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\protocol.c"],
+],
+"link":[
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\protocol.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_system.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_json.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_hashes.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_tables.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_strutils.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_lexbase.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_streams.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_unicode.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_macros.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_parseutils.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_math.o",
+"C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_algorithm.o"
+],
+"linkcmd": "C:\\Users\\ZACH\\Documents\\mingw64\\bin\\gcc.exe   -o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\protocol.exe  C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\protocol.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_system.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_json.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_hashes.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_tables.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_strutils.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_lexbase.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_streams.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_unicode.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_macros.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_parseutils.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_math.o C:\\Users\\ZACH\\Documents\\nim\\chapter3\\chatapp\\src\\nimcache\\stdlib_algorithm.o    "
+}
