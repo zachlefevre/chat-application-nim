@@ -39,4 +39,8 @@ when isMainModule:
     let expected = """{"username":"Zachary","message":"howdy there"}""" & "\c\l"
     let created = createMessage("Zachary", "howdy there")
     doAssert created == expected
+  block:
+    let data = """{"username":"Zachary", "password":"123"}"""
+    let obj = parseJson(data)
+    doAssert obj["username"].getStr() == "Zachary"
     echo "All Tests Passed"
