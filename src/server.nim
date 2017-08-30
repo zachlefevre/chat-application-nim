@@ -12,12 +12,30 @@ type
 
 proc newServer(): Server = Server(socket: newAsyncSocket(), clients: @[])
 
+
+proc `$` (client: Client): string =
+  $client.id & "(" & $client.netAddr & ")"
+
+proc processMessage(server: Server, client: Client) {.async.} =
+  while true:
+    let line = await client.socket.recvLine()
+    if line.len == 0:
+      echo ("client disconnected")
+      client.connected = false
+      client.socket.close()
+      return
+    echo(client, " sent ", "\"", line, "\"")
+    for c in server.clients:
+      if(c.id != client.id and c.connected):
+        await c.socket.send(line & "\c\l")
+
+
 proc loop(server: Server, port = 7876) {.async.} =
   server.socket.bindAddr(port.Port)
   server.socket.listen()
 
   while true:
-    let (netADdr, clientSocket) = await server.socket.acceptAddr()
+    let (netAddr, clientSocket) = await server.socket.acceptAddr()
     echo ("Accepted connection from " & netAddr)
     let client = Client(
       socket: clientSocket,
@@ -26,5 +44,7 @@ proc loop(server: Server, port = 7876) {.async.} =
       connected: true
     )
     server.clients.add(client)
+    asyncCheck processMessage(server, client)
+
 
 waitFor loop(newServer())
