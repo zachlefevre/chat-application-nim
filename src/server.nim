@@ -30,7 +30,7 @@ proc processMessage(server: Server, client: Client) {.async.} =
         await c.socket.send(line & "\c\l")
 
 
-proc loop(server: Server, port = 7876) {.async.} =
+proc loop(server: Server, port = 7687) {.async.} =
   server.socket.bindAddr(port.Port)
   server.socket.listen()
 
