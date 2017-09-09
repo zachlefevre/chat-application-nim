@@ -1,5 +1,5 @@
 import threadpool
-var data = "00000000"
+var data = "0000000000"
 
 proc countData(data: string) =
   for i in 0 .. <data.len:
@@ -12,7 +12,7 @@ they are working on data in different states.
 ]#
 
 spawn countData(data)
-data = "11111111"
+data = "1111111111"
 spawn countData(data)
 
 sync()
