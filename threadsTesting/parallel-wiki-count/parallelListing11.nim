@@ -37,7 +37,7 @@ proc parseChunk(chunk: string): Stats =
   var totalSize = 0
   for line in chunk.splitLines():
     parse(line, domainCode, pageTitle, countViews, totalSize)
-    if domainCode == "en" and countViews > result.countViews:
+    if domainCode == "en" and countViews > result.countViews and pageTitle != "Main_Page":
       result = Stats(domainCode: domainCode, pageTitle: pageTitle, countViews: countViews, totalSize: totalSize)
 proc readPageCount(filename: string, chunkSize: int) =
   var file = open(filename)
